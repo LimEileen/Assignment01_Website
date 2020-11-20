@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 3000px;
+  width: 100%;
+  background-image: linear-gradient(#B589D6,#9969C7,#804FB2,
+  #6F2CB4,#6414B6);
+}
+
+header{
+  background-image: linear-gradient(#9969C7,#804FB2,#6F2CB4);
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  z-index: 12;
+}
+
+.btslogo{
+  width: 60px;
+  height: 70px;
+  padding: 10px 30px;
+  float: left;
+}
+
+nav ul{
+  float: right;
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 85px;
+  margin: 0 25px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  letter-spacing: 5px;
+}
+
+a:hover{
+  color: #F0B0BC; 
+}
+
+.fabars{
+  font-size: 40px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (min-width: 1091px){
+  .btslogo{
+    width: 60px;
+    height: 70px;
+    padding: 10px 30px;
+    float: left;
+  }
+}
+
+@media (max-width: 1090px){
+  .fabars{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#9969C7,#804FB2,#6F2CB4)
+    top: 80px;
+    left:  -100%;
+    text-align: center;
+    margin-top: 100px;
+    transition: .5s;
+  }
+  nav ul li{
+    display: block;
+  }
+  nav ul li a{
+    font-size: 25px;
+  }
+  a:hover{
+  color: #F0B0BC; 
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+.homegrpimg{
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  border-radius: 40px;
+  opacity: 0.5;
+}
+
+.banner{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner h1{
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 100px;
+  font-family: Segoe Script;
+}
+
+h2{
+  text-align: center;
+  margin-top: 50px;
+  color:white;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  font-size: 30px;
+}
+
